@@ -1,9 +1,12 @@
 <?php
 
-$server_host = "db-ads.c8bqy6anulng.sa-east-1.rds.amazonaws.com";
-$server_user = "admin";
-$server_password = "Unimar-ads-2023";
-$server_database = "minha_base";
+`aluno` (
+  `nome` varchar(500) DEFAULT NULL,
+  `sobrenome` varchar(500) DEFAULT NULL,
+  `email` varchar(500) DEFAULT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+ )
 
 // Criando conexão
 $conn = new mysqli($server_host, $server_user, $server_password, $server_database);
